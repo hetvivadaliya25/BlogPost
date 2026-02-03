@@ -1,0 +1,120 @@
+.login-container{
+    display: flex;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-left{
+    flex: 1;
+    background: linear-gradient(160deg, rgba(0, 0, 0, 0.966), #1e4353, #367083);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-left .images{
+    width: 70%;
+    max-width: 100%;
+}
+.login-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    background-color: #ffffff;
+}
+.login-right form {
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-right p{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.login-right h2{
+    font-size: 32px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.login-right h2,
+.login-right .subtitle,
+.input-field,
+.btn{
+    width: 100%;
+    max-width: 380px;
+}
+
+.subtitle{
+    color: #6b7280;
+    margin-bottom: 30px;
+    text-align: left;
+}
+.input-field{
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 16px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+}
+.input-field:focus{
+    border-color: #1f1f7a;
+}
+.otp-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .otp-box {
+    /* આ પ્રોપર્ટી બોક્સને સુંદર બનાવશે */
+    width: 45px !important; 
+    height: 45px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center;
+    outline: none;
+    background-color: white;
+    color: black;
+    transition: all 0.2s ease;
+  }
+  
+  .otp-box:focus {
+    border-color: #367083;
+    box-shadow: 0 0 5px rgba(54, 112, 131, 0.5);
+  }
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    border-radius: 6px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+.primary{
+    background: linear-gradient(135deg, #367083, #1e4353);
+    color: white;
+}
+.secondary{
+    background: linear-gradient(135deg, #367083, #4e7786);
+    color: white;
+}
+.error {
+    color: red;
+    font-size: 13px;
+    width: 100%;
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}

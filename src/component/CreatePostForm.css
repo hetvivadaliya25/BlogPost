@@ -1,0 +1,151 @@
+/* Main Wrapper */
+.createpostform-class {
+  min-height: 100vh;
+  padding-top: 100px; 
+}
+
+/* --- LIGHT MODE LOGIC --- */
+.createpostform-class.light {
+  background-color: #f5f7fa; 
+  color: #333;
+}
+
+.createpostform-class.light .page {
+  background: #f5f7fa;
+}
+
+.createpostform-class.light .form {
+  background: white;
+  color: black;
+  border: 1px solid #ddd;
+}
+
+/* --- DARK MODE LOGIC --- */
+.createpostform-class.dark {
+  background-color: black !important;
+}
+
+.createpostform-class.dark .page {
+  background: black !important;
+}
+
+.createpostform-class.dark .form {
+  background: #1e1e1e !important; /* Dark card background */
+  border: 1px solid #333 !important;
+  color: #f5f5f5 !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+}
+
+.createpostform-class.dark h1 {
+  color: #ffffff !important;
+}
+
+/* Dark Mode Inputs */
+.createpostform-class.dark .form input,
+.createpostform-class.dark .form textarea {
+  background-color: #2c2c2c !important;
+  color: white !important;
+  border: 1px solid #444 !important;
+}
+
+.createpostform-class.dark .form input::placeholder,
+.createpostform-class.dark .form textarea::placeholder {
+  color: #888;
+}
+
+/* Dark Mode Buttons */
+.createpostform-class.dark .form button:not(.cancel-btn) {
+  background: black !important;
+  color: white !important;
+}
+
+.createpostform-class.dark .cancel-btn {
+  background: #333 !important;
+  color: white !important;
+}
+
+/* --- COMMON STYLES --- */
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  min-height: 100vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 600px;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form input,
+.form textarea {
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: #367083;
+  box-shadow: 0 0 8px rgba(54, 112, 131, 0.2);
+}
+
+.form button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1e4353, #367083);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-group {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.btn-group button {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.cancel-btn {
+  background: #666 !important;
+  color: white;
+}
+
+.form button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.error {
+  color: #ff4d4d;
+  font-size: 13px;
+}
+
+.blur-bg {
+  filter: blur(3px);
+  opacity: 0.4;
+  pointer-events: none;
+}

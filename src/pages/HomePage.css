@@ -1,0 +1,25 @@
+.scroll-top-wrapper {
+  position: fixed;      /* MOST IMPORTANT */
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+/* main container */
+.container-home {
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+.container-home.light {
+  background-color: white;
+}
+
+.container-home.dark {
+  background: black;
+  color: white;
+}
+.scroll-top-wrapper{
+  color: #1e4353;
+}

@@ -1,0 +1,146 @@
+
+.explore-container {
+  color: black;
+  min-height: 100vh; /* આ લાઈન ઉમેરો */
+  display: flex;
+  flex-direction: column;
+}
+.explore-container.light {
+  background-color: white;
+}
+
+.explore-container.dark,
+.explore-container.dark .explore-posts ,
+.explore-container.dark .explore-posts .search-wrapper{
+  background: black;
+  color: white;
+}
+.explore-container.dark .input-class,
+.explore-container.dark .input-box{
+  background: #121212;
+  border: none;
+  color: white;
+}
+
+.explore-container.dark button{
+  background: #121212;
+  color: white;
+}
+.explore-posts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+}
+
+.input-box {
+  padding: 12px 45px;
+  font-size: 16px;
+  width: 250px;
+  border: 2px solid #ccc;
+  background-color: #fff;
+  color: black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-box:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3);
+}
+
+.search-wrapper {
+  position: relative;
+  width: 300px;
+}
+
+.input-box {
+  width: 100%;
+  padding: 10px 40px 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.search-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+.home-title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.card-container {
+  display: flex;
+  margin-bottom: 50px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card1 {
+  width: 360px;
+  background: #fff;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img {
+  width: 74%;
+  height: 200px;
+
+  background: fixed;
+}
+
+.card-body {
+  padding: 12px;
+  text-align: center;
+}
+
+.btn4 {
+  margin: 5px;
+  background: linear-gradient(135deg, #1e4353, #367083);
+  height: 30px;
+  width: 80px;
+  border-radius: 6px;
+  justify-items: center;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+.btn5 {
+  margin: 5px;
+  margin-left: 20px;
+  background: linear-gradient(135deg, #1e4353, #367083);
+  height: 30px;
+  width: 140px;
+  border-radius: 6px;
+  justify-items: center;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+.input-class{
+  width:97%;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  margin-left: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+.form-container{
+  margin-left: 20px;
+}
