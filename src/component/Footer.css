@@ -1,0 +1,15 @@
+.footer-class{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding:30px;
+    background: linear-gradient(135deg, #000000, #367083, #1e4353);
+}
+  .footer-class.light {
+    background-color: white;
+  }
+  
+  .footer-class.dark {
+    background: #121212;
+    color: white;
+  }

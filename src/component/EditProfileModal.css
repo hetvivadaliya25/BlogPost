@@ -1,0 +1,88 @@
+/* ===== Modal Overlay ===== */
+.edit-profile-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* 🔥 navbar karta upar */
+}
+
+/* ===== Modal Box ===== */
+.edit-modal {
+  background: #ffffff;
+  width: 420px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  animation: scaleUp 0.25s ease;
+}
+
+/* ===== Inputs ===== */
+.edit-modal input,
+.edit-modal select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+.edit-modal input:focus {
+  border-color: #1e4353;
+}
+
+/* ===== Buttons ===== */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.btn {
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+}
+
+.btn-cancel {
+  background: #e5e7eb;
+  color: #000;
+}
+
+.btn-save {
+  background: linear-gradient(135deg, #1e4353, #367083);
+  color: #fff;
+}
+.error-msg {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.blur-bg {
+  filter: blur(2px);
+  pointer-events: none;
+}
+/* ===== Animation ===== */
+@keyframes scaleUp {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

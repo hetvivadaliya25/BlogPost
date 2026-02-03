@@ -1,0 +1,137 @@
+/* મૂળ કાર્ડ સ્ટાઈલ (જે બંને મોડમાં કોમન રહેશે) */
+.card {
+  width: 400px;
+  min-height: 500px;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  overflow: hidden;
+  transition: all 0.3s ease; /* સ્મૂથ કલર ચેન્જ માટે */
+}
+
+/* 1. Light Mode - તમારો ઓરિજિનલ ગ્રેડિયન્ટ લુક અહીં રહેશે */
+.card.light {
+  background: linear-gradient(135deg, #000000, #367083, #1e4353) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); 
+  color: white !important;
+}
+
+/* 2. Dark Mode - પ્યોર બ્લેક અથવા ડાર્ક લુક માટે */
+.card.dark {
+  background: #121212 !important; /* પ્યોર ડાર્ક કલર */
+  border: 1px solid #333;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.8); 
+  color: #ffffff !important;
+}
+
+/* card ni andar na text mate (jo jarur pade to)
+.card.dark .title-class-h1, 
+.card.dark .card-desc-class p {
+  color: white !important;
+}
+
+.card.light .title-class-h1, 
+.card.light .card-desc-class p {
+  color: white !important; /* કારણ કે લાઈટ મોડમાં ગ્રેડિયન્ટ ડાર્ક છે */
+/* } */
+
+/* Icon */
+.icon-center {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.img-icon {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.img-icon:hover{
+  transform: scale(1.05);
+}
+
+/* Content */
+.card-title-class h1{
+  text-align: left; /* ટેક્સ્ટ ડાબી બાજુ કરવા */
+  width: 100%;      /* પૂરી પહોળાઈ આપવા */
+}
+
+.card-title-class h1 {
+  margin: 0;        /* h1 ના ડિફોલ્ટ માર્જિન કાઢી નાખવા */
+  font-size: 24px;  /* જરૂર મુજબ સાઈઝ સેટ કરો */
+  padding-left: 5px; /* જો સાવ બોર્ડરને અડી જતું હોય તો થોડી જગ્યા આપવા */
+}
+
+.card-desc-class p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 10px;    /* ઉપરથી ઓછી જગ્યા */
+  margin-bottom: 20px; /* નીચેથી ઓછી જગ્યા */
+  text-align: left;    /* આ પણ left કરી દો જો તે center માં આવતું હોય */
+  color: #cbd5e1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Button container */
+.div1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.div2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: auto;
+}
+
+.btn1 {
+  background: transparent;
+
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 540;
+  /* border: 1px solid black; */
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100px;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn1:hover {
+  background:#272d47;
+  color: white;
+}
+.btn1:first-child {
+  border: 2px solid #ffffff;
+  color: white;
+}
+.btn1:first-child:hover {
+  background: white; /* હોવર પર સફેદ થઈ જશે */
+  color: #1e4353;
+}
+
+.btn1:last-child {
+   border: 2px solid #ff5252;
+  color: #ff5252;
+}
+
+.btn1:last-child:hover {
+  background: #ff5252;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 82, 82, 0.3);
+}

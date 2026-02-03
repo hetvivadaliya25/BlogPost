@@ -1,0 +1,72 @@
+body {
+  /* Navbar ની પાછળ લખાણ ન દબાય તે માટે */
+  padding-top: 100px; 
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: linear-gradient(160deg, rgba(0, 0, 0, 0.966), #1e4353, #367083); */
+  color: white;
+  padding: 30px 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 9999;
+}
+.nav-light{
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.966), #1e4353, #367083);
+}
+.nav-dark{
+  background-color: #121212;
+  color: white;
+}
+.menu {
+  list-style: none;   
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+}
+
+.darkmode {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+}
+
+/* ===== Profile Circle ===== */
+.profile-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
+  width: 42px;
+  font-size: 18px;
+  color: #367083;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* ===== Links ===== */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  font-size: 20px;
+}
+
+.navbar p:empty {
+  display: none;
+}
+
+.active-link {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}

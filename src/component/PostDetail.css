@@ -1,0 +1,109 @@
+.postdetail-container{
+    display: flex;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px auto;
+    width: 80%;
+    justify-content: center;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); 
+}
+
+.postdetail-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images{
+    height: 500px;
+    width: 500px;
+    margin: 0px;
+    max-width: 100%;
+}
+.postdetail-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex:1;
+    padding: 20px;
+    background-color: #f6f3f3;
+}
+.detail-1{
+    align-self: flex-start;
+}
+.detail-1 h3 {
+    margin-top: 20px;
+    color: rgba(56, 55, 55, 0.901);
+}
+
+.btns{
+    display: flex;
+    margin-right: 10px;
+    font-weight: 540;
+    font-size: 14px;
+    gap:20px;
+    align-self: flex-end;
+}
+.btndelete{
+    padding: 10px 20px;
+
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100px;
+    color: white;
+    background: rgb(226, 13, 13);
+    transition: all 0.3s ease;
+    border: none;
+}
+.btnedit{
+    padding: 10px 20px;
+    
+    color: white;
+    background: rgb(34, 59, 203);
+    border: 1px solid black;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100px;
+    transition: all 0.3s ease;
+    border: none;
+}
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal-buttons .cancel {
+    background: #ccc;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+.modal-buttons .confirm {
+    background: red;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+}

@@ -1,0 +1,50 @@
+.pagination-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.drop-class{
+    margin-right: 10px;
+}
+.pagination-container button{
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.pagination-info{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* PREV button */
+.pagination-btn1{
+    background-color: #367083;
+    color: white;
+}
+/* FOR DISABLE PREV BUTTON */
+.pagination-btn1:disabled {
+    background-color: #398199;
+    color: white; 
+    cursor: not-allowed;      /* Shows the "stop" sign cursor */
+    opacity: 0.6;             /* Makes it look transparent */
+    transform: none;          /* Removes hover movement */
+}
+/* NEXT button */
+.pagination-btn2{
+    background-color: #367083;
+    color: white;
+}
+/* FOR DISABLE NEXT BUTTON */
+.pagination-btn2:disabled {
+    background-color: #398199;
+    color: white;
+    cursor: not-allowed;      /* Shows the "stop" sign cursor */
+    opacity: 0.6;             /* Makes it look transparent */
+    transform: none;          /* Removes hover movement */
+}
+.pagination-container label{
+    font-size: 24px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
