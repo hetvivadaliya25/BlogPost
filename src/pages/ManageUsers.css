@@ -1,0 +1,135 @@
+/* Container styling to cover full screen */
+.main-container {
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Light mode background and text colors */
+.main-container.light {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Dark mode background and text colors */
+.main-container.dark {
+    background-color: black;
+    color: white;
+}
+
+/* Title styling */
+.manage-users-title {
+    margin-bottom: 20px;
+}
+
+/* Table layout and rounded corners */
+.user-table {
+    width: 60%;
+    margin: 0 auto;
+    border-collapse: separate; 
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid #ddd;
+}
+
+/* Table background color for Light Mode */
+.main-container.light .user-table {
+    background-color: white;
+}
+
+/* Table background and border color for Dark Mode */
+.main-container.dark .user-table {
+    background-color: #1e1e1e;
+    border-color: #444;
+}
+
+/* Table header (th) styling */
+th {
+    background-color: #367083;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Header background for Dark Mode */
+.main-container.dark th {
+    background-color: #000;
+}
+
+/* Table cell (td) styling */
+td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+/* Cell border for Dark Mode */
+.main-container.dark td {
+    border-bottom: 1px solid #333;
+}
+
+/* Remove bottom border from the last row */
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Row hover effect for Light Mode */
+.main-container.light tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Row hover effect for Dark Mode */
+.main-container.dark tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Flexbox container for buttons to keep them side-by-side */
+.action-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+/* General styling for Edit and Delete buttons */
+.edit-btn, .delete-btn {
+    padding: 6px 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+/* Light Mode specific button colors */
+.main-container.light .edit-btn {
+    background-color: #367083;
+    color: white;
+}
+
+.main-container.light .delete-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* --- Dark Mode Buttons - Black background with white text --- */
+.main-container.dark .edit-btn, 
+.main-container.dark .delete-btn {
+    background-color: rgba(0, 0, 0, 0.685);
+    color: white;
+    border: 1px solid #444;
+}
+
+/* Hover effects for buttons in Dark Mode */
+.main-container.dark .edit-btn:hover {
+    background-color: #333;
+    border-color: #367083;
+}
+
+.main-container.dark .delete-btn:hover {
+    background-color: #333;
+    border-color: #e74c3c;
+}
