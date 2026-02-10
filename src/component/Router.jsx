@@ -6,6 +6,7 @@ import PostDetail from "./PostDetail";
 import AuthGuard from "../guard/AuthGuard";
 import NotFound from "./NotFound";
 import ExplorePostPage from "../pages/ExplorePostsPage";
+import ManageUsers from "../pages/ManageUsers";
 
 
 export const router = createBrowserRouter([
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
             {
                 path: "/new-post",
                 element: <CreatePostPage />
+            },
+            {
+                path: "/manage-users",
+                element: <ManageUsers />
             },
             //used for post detail page
             {

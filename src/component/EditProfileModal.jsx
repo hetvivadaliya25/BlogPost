@@ -9,6 +9,7 @@ const EditProfileModal = ({ userId, onConfirm, onClose, confirmBtnText = "Save" 
   const [formData, setFormData] = useState({
     name: "",
     mobile: "",
+    birthdate: "",
     role: "",
     otp: "",
   });
@@ -136,6 +137,19 @@ const EditProfileModal = ({ userId, onConfirm, onClose, confirmBtnText = "Save" 
               onChange={handleChange}
             />
             {errors.mobile && <span className="error-text">{errors.mobile}</span>}
+          </div>
+          {/* Birth Date Input */}
+          <div className="input-group">
+            <label style={{ fontSize: "12px", color: "#666", marginBottom: "5px", display: "block" }}>
+              Birth Date
+            </label>
+            <input
+              type="date" 
+              name="birthdate"
+              value={formData.birthdate}
+              onChange={handleChange}
+            />
+            {errors.birthdate && <span className="error-text">{errors.birthdate}</span>}
           </div>
 
           <select name="role" value={formData.role} disabled>

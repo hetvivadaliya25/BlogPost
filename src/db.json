@@ -1,0 +1,43 @@
+{
+  "posts": [
+    { 
+      "id": "244a",
+      "title": "re",
+      "body": "er",
+      "image": "https://picsum.photos/200/300"
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ],
+
+  "users": [
+    {
+      "id": "1",
+      "name": "Hetvi Vadaliya",
+      "mobile": "9876543210",
+      "role": "Admin",
+      "createdAt": "07-02-2026, 10:58:10 PM"
+    },
+    {
+      "id": "2",
+      "name": "Binali Kotadiya",
+      "mobile": "9988776655",
+      "role": "Editor",
+      "createdAt": "06-02-2026, 03:58:25 PM"
+    },
+    {
+      "id": "3",
+      "name": "Axita Bhuva",
+      "mobile": "8866442299",
+      "role": "Author",
+      "createdAt": "05-02-2026, 08:11:06 AM"
+    }
+  ],
+
+  "profile": {
+    "name": "typicode"
+  }
+}

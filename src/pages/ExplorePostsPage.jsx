@@ -1,5 +1,6 @@
 import ExplorePosts from "../component/ExplorePosts";
 
+
 const ExplorePostPage = () =>{
     return(
         <>

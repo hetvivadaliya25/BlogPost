@@ -83,6 +83,15 @@ const Navbar = () => {
             <></>
           )}
 
+            <li>
+              <NavLink
+                to="/manage-users"
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                Manage Users
+              </NavLink>
+            </li>
+
           <li>
             <NavLink
               to="/explore-page"
